@@ -1,0 +1,16 @@
+#:import utils kivy.utils
+
+<MainGrid>:
+    canvas.before:
+        Color:
+            rgb: utils.get_color_from_hex('#212946')
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        size_hint: 1, 1
+        orientation: 'vertical'
+        padding: 10, 10, 0, 10
+        id: modulation
+ 
